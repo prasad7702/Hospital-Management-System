@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'cdnlines.html' %}
+    <title>Document</title>
+</head>
+<style>
+    select{
+       
+        width:300px;
+        border-radius: 20px;
+       padding-left: 20px;
+        height:50px;
+        font-size: 25px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px blue;
+    }
+    img{
+        border-radius: 10px;
+    }
+    h2{
+        margin-left:550px;
+        font-weight: bold;
+    }
+    body{
+        background-image: url(https://watermark.lovepik.com/photo/40177/5152.jpg_wh1200.jpg);
+        background-size: 1400px 660px;
+    }
+    button{
+        width:300px;
+    }
+    .border1{
+        box-shadow: 0px 0px 20px blue;
+        border-radius:20px;
+        background-color: rgb(161, 164, 167);
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+  
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">                
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <h2>Patient Page</h2>
+                    </div>               
+                    <div>
+                        <a href="{% url 'loginpage' %}" class="btn btn-success">Logout</a>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <a href="{% url 'patientdetails' %}" class="btn btn-success">Take Appointment</a>
+            </div>
+        </div>
+        <br>
+        <br>  
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="" class="btn btn-success">Check Appointment Status</a>                </div>
+            </div>
+        <div class="row">
+            <div class="offset-md-3 col-md-6 border1 text-center mt-3 mb-3 p-3">
+                <h1>Sorry</h1>
+                <h1>Your Appointment is Declined</h1>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="text-center btn btn-success ">Doctors List:</button>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/cardiology/dr-a-k-bardhan-cardiology-in-kolkata.png" height="200px" width="150px">
+                <h5 class="text-center mt-2">A K Bardhan</h5>
+                <h6 class="text-center">(Cardiology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/ent/dr-ameet-kishore-ent-in-delhi.png" height="200px" width="150px">
+                <h5 class="text-center mt-2">B Shobhan</h5>
+                <h6 class="text-center">(Neurology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/cardiology/dr-harikrishnan-p-cardiology-in-chennai.png" height="200px" width="170px">
+                <h5 class="text-center mt-2">Sai Ram</h5>
+                <h6 class="text-center">(Gastrology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://www.apollohospitals.com/bangalore/wp-content/uploads/2021/08/Dr-Jayaranganath.jpg" height="200px" width="150px">
+                <h5 class="text-center mt-2">T Krishna</h5>
+                <h6 class="text-center">(cardiology)</h6>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/general-and-laparoscopic-surgeon/dr-b-sujeeth-kumar-general-and-laparoscopic-surgeon-in-hyderabad.png"  height="200px" width="150px">
+                <h5 class="text-center mt-2">T Krishna</h5>
+                <h6 class="text-center">(cardiology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/obstetrics-and-gynecology/dr-anuradha-panda-obstetrics-and-gynecology-in-hyderabad.png"  height="200px" width="150px">
+                <h5 class="text-center mt-2">Anuradha Panda</h5>
+                <h6 class="text-center">(Gynecology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/surgical-oncology/dr-arsheed-hussain-hakeem-surgical-oncology-in-hyderabad.png"  height="200px" width="150px">
+                <h5 class="text-center mt-2">Harsheed Hussain</h5>
+                <h6 class="text-center">(Oncology)</h6>
+            </div>
+            <div class="col-md-3 text-center">
+                <img src="https://cdn.askapollo.com/live/images/doctors/urology/dr-arun-shah-urology-in-hyderabad.png"  height="200px" width="150px">
+                <h5 class="text-center mt-2">Arun Shah</h5>
+                <h6 class="text-center">(Urology)</h6>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

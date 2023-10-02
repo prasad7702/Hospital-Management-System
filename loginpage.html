@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'cdnlines.html' %}
+    <title>Document</title>
+</head>
+<style>
+    form{
+        background-image: linear-gradient(rgb(216, 203, 203), black);
+        box-shadow: 0px 0px 20px blue;
+        border-radius:20px;
+        padding:20px;
+        margin-top:150px;
+    }
+    input{
+        border-radius: 10px;
+        
+        height:40px;
+    }
+    a{
+        margin-top: 5px;
+    }
+    body{
+        background-image: url(https://ibtbd.net/wp-content/uploads/2016/04/Global-Health-01.jpg);
+        background-size:1400px 700px;
+        background-size: auto;
+        
+    }
+    img{
+        border-radius: 50%;
+    }
+    button{
+        width:430px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-md-1 col-md-4">              
+                <form action="" method="post" class="text-center">
+                    {% csrf_token %}
+                    <h3 class="text-center">Admin Login</h3> 
+                    <img src="https://st2.depositphotos.com/2101611/6967/v/450/depositphotos_69670257-stock-illustration-male-avatar-icon.jpg" height="100px" width="100px">                  
+                    <input type="text" name='username1' placeholder="User Name" class="mt-3 form-control"> <br>                
+                    <input type="password" name="password1" placeholder="Password" class="form-control">
+                    <div class="text-center">
+                        <button class="btn btn-success mt-3">login</button>
+                        
+                    </div>
+                    <a href="{% url 'signup' %}" class="text-center">Create New Account</a>
+                </form>
+            </div>
+            <div class="offset-md-2 col-md-4">              
+                <form action="" method="post" class="text-center">
+                    {% csrf_token %}
+                    <h3 class="text-center">Patient Login</h3> 
+                    <img src="https://st2.depositphotos.com/2101611/6967/v/450/depositphotos_69670257-stock-illustration-male-avatar-icon.jpg" height="100px" width="100px">                  
+                    <input type="text" name='username' placeholder="User Name" class="mt-3 form-control"> <br>                
+                    <input type="password" name="password" placeholder="Password" class="form-control">
+                    <div class="text-center">
+                        <button class="btn btn-success mt-3">login</button>
+                        
+                    </div>
+                    <a href="{% url 'signup' %}" class="text-center">Create New Account</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

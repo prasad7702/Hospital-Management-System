@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'cdnlines.html' %}
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(https://media.istockphoto.com/id/1362200726/photo/doctor-hand-holding-plus-sign-virtual-as-a-concept-of-health-medical-insurance-and-personal.jpg?s=1024x1024&w=is&k=20&c=1H6_wLFW-K5rDKa94cJGtForRDiOdtp3qPv8XfzOm3k=);
+        background-size:1400px 700px ;
+    }
+    .top{
+        margin-top: 200px;
+    }
+    button{
+       color:white;
+       margin: right;
+    }
+    h1{
+        font-size: 70px;
+        margin-bottom: -40px;
+        margin-left: 170px;
+        font-weight: bold;
+        color:white;
+        text-shadow: 0px 0px 40px blue, 0px 0px 20px green;
+    }
+    p{
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 50px;
+        color:white;
+        text-shadow: 0px 0px 40px blue, 0px 0px 20px green;
+    }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row top">
+            <div class="offset-md-4 col-md-8 text-center ">
+                <h1 class="">Hospital</h1> <br>
+                <h1 class="">Management System</h1> <br>
+            </div>
+        </div>
+       
+        <div class="row mt-5">
+            <div class="offset-md-8 col-md-3">
+                <button class="btn btn-info btn-lg"><a href="{% url 'loginpage' %}">Get Start</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'cdnlines.html' %}
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(https://c8.alamy.com/comp/HDFRCF/patient-information-form-analysis-record-medical-concept-HDFRCF.jpg);
+    }
+    form{
+        background-image: linear-gradient(rgb(135, 187, 207), rgb(242, 242, 247));
+        box-shadow: 0px 0px 20px blue;
+        margin-top: 140px;
+        margin-left: 10px;
+        padding:30px;
+        border-radius: 20px;
+        background-color:rgb(184, 180, 180);
+        padding-top: 40px;
+    }
+    input{
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    h2{
+        color:white;
+    }
+ 
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-md-3 col-md-4">
+                <form action="#" method="post">
+                  
+                    {% csrf_token %}
+                    <input type="text" placeholder="Name" class="form-control" name="name">
+                    <input type="number" placeholder="Age" class="form-control" name="age">
+                    <input type="text" placeholder="Gender" class="form-control" name="gender">
+                    <input type="number" placeholder="Mobile" class="form-control" name="mobile">
+                    <textarea name="address" id="" cols="30" rows="4" placeholder="Address"></textarea>
+                    <input type="text" placeholder="Problem" class="form-control" name="problem">
+                    <input type="text" placeholder="Doctor Name" class="form-control" name="dname">
+                    <div class="text-center">
+                        <input type="submit" value="submit" class="btn btn-success">
+                        <input type="reset" value="clear" class="btn btn-danger">
+                    </div>          
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
